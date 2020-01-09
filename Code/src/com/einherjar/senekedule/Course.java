@@ -17,4 +17,9 @@ public class Course {
         }
         return true;
     }
+
+    public String toString()
+    {
+        return code+" : "+title+"\n";
+    }
 }

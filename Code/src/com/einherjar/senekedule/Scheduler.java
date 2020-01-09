@@ -9,7 +9,8 @@ public class Scheduler {
 
     public Scheduler()
     {
-
+     Loader loader= new Loader();
+     loader.load();
     }
 
     public void loadData()

@@ -26,4 +26,9 @@ public class ClassPool {
         }
         return true;
     }
+
+    @Override
+    public String toString() {
+        return courses.toString();
+    }
 }

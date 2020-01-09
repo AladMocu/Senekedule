@@ -12,6 +12,7 @@ public class ServerCore {
     Scheduler scheduler;
 
     public ServerCore() throws IOException {
+        scheduler= new Scheduler();
         int port = 9000;
         HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
         System.out.println("server started at " + port);
