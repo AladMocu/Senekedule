@@ -1,4 +1,4 @@
-package com.einjerjar.senekedule;
+package com.einherjar.senekedule;
 
 public class Teacher {
     String name;

@@ -1,6 +1,5 @@
-package com.einjerjar.senekedule;
+package com.einherjar.senekedule;
 
-import javax.xml.validation.SchemaFactoryLoader;
 import java.util.ArrayList;
 
 public class Schedule {

@@ -1,4 +1,4 @@
-package com.einjerjar.senekedule;
+package com.einherjar.senekedule;
 
 import java.util.ArrayList;
 
