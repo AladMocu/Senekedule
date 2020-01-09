@@ -9,7 +9,7 @@ import java.net.InetSocketAddress;
 
 public class ServerCore {
 
-    Scheduler scheduler;
+    public static Scheduler scheduler;
 
     public ServerCore() throws IOException {
         scheduler= new Scheduler();
@@ -17,7 +17,7 @@ public class ServerCore {
         HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
         System.out.println("server started at " + port);
         server.createContext("/", new RootHandler());
-        server.createContext("/echoPost", new EchoPostHandler());
+        server.createContext("/course", new EchoPostHandler());
         server.setExecutor(null);
         server.start();
     }

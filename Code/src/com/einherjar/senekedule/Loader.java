@@ -13,7 +13,7 @@ import java.util.ArrayList;
 public class Loader {
 
 
-    public void load()
+    public ArrayList<Course> load()
     {
         String founderJson = "";
         try
@@ -32,7 +32,7 @@ public class Loader {
 
         ArrayList<Course> founderList = gson.fromJson(founderJson, founderListType);
 
-        System.out.println(founderList);
+        return founderList;
     }
 
 }

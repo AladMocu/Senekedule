@@ -9,6 +9,7 @@ public class ClassPool {
 
     public ClassPool(String code)
     {
+        this.code=code;
         courses=new ArrayList<>();
     }
 
@@ -30,5 +31,18 @@ public class ClassPool {
     @Override
     public String toString() {
         return courses.toString();
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj==null)
+        {
+            return false;
+        }
+        return code.equals(((ClassPool)obj).getCode());
     }
 }

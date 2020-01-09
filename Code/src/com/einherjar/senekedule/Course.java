@@ -3,7 +3,7 @@ package com.einherjar.senekedule;
 import java.util.ArrayList;
 
 public class Course {
-    int nrc;
+    String nrc;
     String code;
     String title;
     int maxStudents;
@@ -21,5 +21,9 @@ public class Course {
     public String toString()
     {
         return code+" : "+title+"\n";
+    }
+
+    public String getNRC() {
+        return nrc;
     }
 }
